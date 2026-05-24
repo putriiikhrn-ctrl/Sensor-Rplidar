@@ -1,0 +1,42 @@
+# Pemahaman yang perlu di terapkan sebelum penggunaan
+git dan GitHub itu berbeda, git merupakan aplikasi di desktop/laptop, GitHub merupakan forum untuk menyimpan file sama seperti google drive
+sebelum upload file perlu di tambahkan ke aplikasi git terlebih dahulu untuk bisa di push ke GitHub
+ingat! sebelum melakukan upload selalu lakukan pull dikarenakan apabila GitHub dan git tidak sync akan terjadi conflict dan perllu di merge mekanisme
+
+# sebelum ada file .git dalam folder project lakukan 
+```
+
+git init
+
+```
+
+
+# Ketika ada file .git dalam folder project
+
+## upload
+
+tambahkan ke aplikasi git dulu :
+1. command dibawah akan menyimpan perubahan yang terjadi di folder yang sedang dibuka sesuai path dalam terminal, ke aplikasi git
+
+<.> itu artinya folder saat ini yang dibuka, jika ingin men add Sebagian add <nama-file>
+```
+git add .
+
+```
+2. command dibwah akan men konfirmasi perubahan ke aplikasi git
+```
+git commit -m "tuliskan komentar commit(bebas mau isi apa juga)"
+
+```
+3. command dibawah akan menarik update dari repository GitHub di branch main
+```
+git pull origin main
+```
+4. command dibawah akan men upload perubahan yang di tambahkan sebelumnya di add dan commit ke branch main di github
+```
+git push origin main
+```
+
+
+sisa command dan tutorial bisa dilihat di https://git-scm.com/docs
+cek ai 
